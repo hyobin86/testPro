@@ -115,7 +115,7 @@ watch(
         Material Design
       </RouterLink>
       <button
-        class="navbar-toggler shadow-none "
+        class="navbar-toggler shadow-none"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navigation"
@@ -179,7 +179,7 @@ watch(
                         Landing Pages
                       </div>
                       <RouterLink
-                        :to="{ name: 'about' }"
+                        :to="{ name: 'index' }"
                         class="dropdown-item border-radius-md"
                       >
                         <span>About Us</span>
@@ -195,7 +195,7 @@ watch(
                   Landing Pages
                 </div>
                 <RouterLink
-                  :to="{ name: 'about' }"
+                  :to="{ name: 'index' }"
                   class="dropdown-item border-radius-md"
                 >
                   <span>About Us</span>

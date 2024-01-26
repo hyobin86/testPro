@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import AboutView from "../views/LandingPages/index.vue";
+import indexView from "../views/LandingPages/index.vue";
 import PageHeaders from "../layouts/sections/page-sections/page-headers/HeadersView.vue";
 import PageFeatures from "../layouts/sections/page-sections/features/FeaturesView.vue";
 import NavigationNavbars from "../layouts/sections/navigation/navbars/NavbarsView.vue";
@@ -24,8 +24,8 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      name: "about",
-      component: AboutView,
+      name: "index",
+      component: indexView,
     },
     {
       path: "/sections/page-sections/page-headers",
