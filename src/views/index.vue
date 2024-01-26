@@ -5,9 +5,9 @@ import Footer from "@/components/Footer.vue";
 
 //sections
 import Headers from "./section/AboutHeader.vue";
-import Information from "./section/AboutInformation.vue";
-import Graph from "./section/AboutGraph.vue"
-import List from "./section/AboutList.vue"
+import Introduce from "./section/AboutIntroduce.vue";
+import Skill from "./section/AboutSkill.vue"
+import ProjectList from "./section/AboutProject.vue"
 
 //data
 import data from "./Data/listData.js";
@@ -17,10 +17,10 @@ import data from "./Data/listData.js";
   <Headers/>
   <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
     <!-- 소개 -->
-    <Information />
+    <Introduce />
     <!-- skill -->
-    <Graph />
-    <List :data="data" />
+    <Skill />
+    <ProjectList :data="data" />
   </div>
   <Footer />
 </template>

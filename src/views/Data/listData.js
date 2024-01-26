@@ -12,9 +12,7 @@ import imgStat from "@/assets/img/stat.png";
 import imgContent from "@/assets/img/content.png";
 import imgPagination from "@/assets/img/pagination.png";
 import imgAlert from "@/assets/img/alerts.jpg";
-import imgPopover from "@/assets/img/popovers.jpg";
 import imgModal from "@/assets/img/modals.jpg";
-import imgDropdowns from "@/assets/img/dropdowns.jpg";
 
 export default [
   {
@@ -26,14 +24,14 @@ export default [
         image: imgFeatures,
         title: "Page Headers",
         subtitle: "10 Examples",
-        route: "page-headers",
+        route: "index",
         pro: false
       },
       {
         image: imgFeatures,
         title: "Features",
         subtitle: "14 Examples",
-        route: "page-features",
+        route: "index",
         pro: false
       },
       {
@@ -146,6 +144,48 @@ export default [
         subtitle: "3 Examples",
         route: "navigation-pagination",
         pro: false
+      },
+      {
+        image: imgPagination,
+        title: "Navbars",
+        subtitle: "4 Examples",
+        route: "navigation-navbars",
+        pro: false
+      },
+      {
+        image: imgPagination,
+        title: "Nav Tabs",
+        subtitle: "2 Nav Tabs",
+        route: "navigation-navtabs",
+        pro: false
+      },
+      {
+        image: imgPagination,
+        title: "Pagination",
+        subtitle: "3 Examples",
+        route: "navigation-pagination",
+        pro: false
+      },
+      {
+        image: imgPagination,
+        title: "Navbars",
+        subtitle: "4 Examples",
+        route: "navigation-navbars",
+        pro: false
+      },
+      {
+        image: imgPagination,
+        title: "Nav Tabs",
+        subtitle: "2 Nav Tabs",
+        route: "navigation-navtabs",
+        pro: false
+      },
+      {
+        image: imgPagination,
+        title: "Pagination",
+        subtitle: "3 Examples",
+        route: "navigation-pagination",
+        pro: false
       }
     ]
   },
@@ -197,10 +237,10 @@ export default [
         pro: false
       },
       {
-        image: imgPopover,
-        title: "Tooltips & Popovers",
-        subtitle: "2 Examples",
-        route: "ac-tooltips-popovers",
+        image: imgModal,
+        title: "Modals",
+        subtitle: "5 Examples",
+        route: "ac-modals",
         pro: false
       },
       {
@@ -209,47 +249,12 @@ export default [
         subtitle: "5 Examples",
         route: "ac-modals",
         pro: false
-      }
-    ]
-  },
-  {
-    heading: "Elements",
-    description:
-      "80+ carefully crafted small elements that come with multiple colors and shapes",
-    items: [
-      {
-        image: imgDropdowns,
-        title: "Dropdowns",
-        subtitle: "2 Examples",
-        route: "el-dropdowns",
-        pro: false
       },
       {
-        image: imgDropdowns,
-        title: "Toggles",
-        subtitle: "2 Examples",
-        route: "el-toggles",
-        pro: false
-      },
-      {
-        image: imgDropdowns,
-        title: "Social Buttons",
-        subtitle: "2 Examples",
-        route: "",
-        pro: true
-      },
-      {
-        image: imgDropdowns,
-        title: "Breadcrumbs",
-        subtitle: "1 Example",
-        route: "el-breadcrumbs",
-        pro: false
-      },
-      {
-        image: imgDropdowns,
-        title: "Badges",
-        subtitle: "3 Examples",
-        route: "el-badges",
+        image: imgModal,
+        title: "Modals",
+        subtitle: "5 Examples",
+        route: "ac-modals",
         pro: false
       }
     ]

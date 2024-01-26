@@ -3,11 +3,21 @@ import { onMounted, onUnmounted } from "vue";
 
 import bg0 from "@/assets/img/bg9.jpg";
 
+// store
+import { useAppStore } from "@/stores";
+const store = useAppStore();
+
+// popover
+import setTooltip from "@/assets/js/tooltip";
+
 //dep
 import Typed from "typed.js";
 const body = document.getElementsByTagName("body")[0];
+
 //hooks
 onMounted(() => {
+  setTooltip(store.bootstrap);
+
   body.classList.add("about-us");
   body.classList.add("bg-gray-200");
 
@@ -52,14 +62,14 @@ onUnmounted(() => {
             </p>
             <h6 class="text-white mb-2 mt-5">Find me on</h6>
             <div class="d-flex justify-content-center">
-              <a href="https://github.com/hyobin86" target="_blank">
-                <i class="fab fa-github text-lg text-white me-4"></i>
+              <a href="https://github.com/hyobin86">
+                <i class="fab fa-github text-lg text-white me-4" title="go to gitHub" data-bs-toggle="tooltip" data-bs-placement="top"></i>
               </a>
               <a href="https://instagram.com/hyobin1216" target="_blank">
-                <i class="fab fa-instagram text-lg text-white me-4"></i>
+                <i class="fab fa-instagram text-lg text-white me-4" title="go to instagram" data-bs-toggle="tooltip" data-bs-placement="top"></i>
               </a>
               <a href="https://blog.naver.com/hyobin_memory" target="_blank">
-                <i class="fa fa-rss text-lg text-white"></i>
+                <i class="fa fa-rss text-lg text-white" title="go to blog" data-bs-toggle="tooltip" data-bs-placement="top"></i>
               </a>
             </div>
           </div>

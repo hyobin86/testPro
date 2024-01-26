@@ -1,7 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import indexView from "../views/LandingPages/index.vue";
-import PageHeaders from "../layouts/sections/page-sections/page-headers/HeadersView.vue";
-import PageFeatures from "../layouts/sections/page-sections/features/FeaturesView.vue";
+import indexView from "../views/index.vue";
 import NavigationNavbars from "../layouts/sections/navigation/navbars/NavbarsView.vue";
 import NavigationNavTabs from "../layouts/sections/navigation/nav-tabs/NavTabsView.vue";
 import NavigationPagination from "../layouts/sections/navigation/pagination/PaginationView.vue";
@@ -9,7 +7,6 @@ import InputAreasInputs from "../layouts/sections/input-areas/inputs/InputsView.
 import InputAreasForms from "../layouts/sections/input-areas/forms/FormsView.vue";
 import ACAlerts from "../layouts/sections/attention-catchers/alerts/AlertsView.vue";
 import ACModals from "../layouts/sections/attention-catchers/modals/ModalsView.vue";
-import ACTooltipsPopovers from "../layouts/sections/attention-catchers/tooltips-popovers/TooltipsPopoversView.vue";
 import ElAvatars from "../layouts/sections/elements/avatars/AvatarsView.vue";
 import ElBadges from "../layouts/sections/elements/badges/BadgesView.vue";
 import ElBreadcrumbs from "../layouts/sections/elements/breadcrumbs/BreadcrumbsView.vue";
@@ -17,7 +14,6 @@ import ElButtons from "../layouts/sections/elements/buttons/ButtonsView.vue";
 import ElButtonGroups from "../layouts/sections/elements/button-groups/ButtonGroupsView.vue";
 import ElDropdowns from "../layouts/sections/elements/dropdowns/DropdownsView.vue";
 import ElProgressBars from "../layouts/sections/elements/progress-bars/ProgressBarsView.vue";
-import ElToggles from "../layouts/sections/elements/toggles/TogglesView.vue";
 import ElTypography from "../layouts/sections/elements/typography/TypographyView.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,16 +22,6 @@ const router = createRouter({
       path: "/",
       name: "index",
       component: indexView,
-    },
-    {
-      path: "/sections/page-sections/page-headers",
-      name: "page-headers",
-      component: PageHeaders,
-    },
-    {
-      path: "/sections/page-sections/features",
-      name: "page-features",
-      component: PageFeatures,
     },
     {
       path: "/sections/navigation/navbars",
@@ -73,11 +59,6 @@ const router = createRouter({
       component: ACModals,
     },
     {
-      path: "/sections/attention-catchers/tooltips-popovers",
-      name: "ac-tooltips-popovers",
-      component: ACTooltipsPopovers,
-    },
-    {
       path: "/sections/elements/avatars",
       name: "el-avatars",
       component: ElAvatars,
@@ -111,11 +92,6 @@ const router = createRouter({
       path: "/sections/elements/progress-bars",
       name: "el-progress-bars",
       component: ElProgressBars,
-    },
-    {
-      path: "/sections/elements/toggles",
-      name: "el-toggles",
-      component: ElToggles,
     },
     {
       path: "/sections/elements/typography",

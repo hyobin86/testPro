@@ -47,15 +47,12 @@ export default {
 };
 </script>
 <template>
-  <section class="my-5 py-5">
+  <section class="py-7" id="project">
     <div class="container">
       <div class="row">
         <div class="row justify-content-center text-center my-sm-5">
           <div class="col-lg-6">
-            <MaterialBadge color="success" class="mb-3"
-              >Infinite combinations</MaterialBadge
-            >
-
+            <MaterialBadge color="success" class="mb-3">Infinite combinations</MaterialBadge>
             <h2 class="text-dark mb-0">Huge collection of sections</h2>
             <p class="lead">
               We have created multiple options for you to put together and
