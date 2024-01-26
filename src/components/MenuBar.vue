@@ -1,7 +1,8 @@
 <script setup>
 import { RouterLink } from "vue-router";
-import { ref, watch } from "vue";
-import { useWindowsWidth } from "../../assets/js/useWindowsWidth";
+import { ref, watch, onMounted } from "vue";
+
+import { useWindowsWidth } from "../assets/js/useWindowsWidth";
 
 // images
 import ArrDark from "@/assets/img/down-arrow-dark.svg";
@@ -19,10 +20,6 @@ const props = defineProps({
       color: "bg-gradient-success",
       label: "Free Download"
     })
-  },
-  transparent: {
-    type: Boolean,
-    default: false
   },
   light: {
     type: Boolean,
@@ -42,34 +39,21 @@ const props = defineProps({
   }
 });
 
-// set arrow  color
 function getArrowColor() {
-  if (props.transparent && textDark.value) {
-    return ArrDark;
-  } else if (props.transparent) {
-    return DownArrWhite;
-  } else {
-    return ArrDark;
-  }
+  return textDark.value?ArrDark:DownArrWhite;
 }
 
-// set text color
-const getTextColor = () => {
-  let color;
-  if (props.transparent && textDark.value) {
-    color = "text-dark";
-  } else if (props.transparent) {
-    color = "text-white";
-  } else {
-    color = "text-dark";
-  }
-
-  return color;
-};
+function getBG() {
+  return textDark.value ? 'bg-white' :'bg-transparent shadow-none '
+}
+function getTextColor() {
+  return textDark.value ? 'text-dark font-weight-bolder' :'text-white'
+}
 
 // set nav color on mobile && desktop
 
-let textDark = ref(props.darkText);
+let textDark = ref(false);
+let height = ref(0);
 const { type } = useWindowsWidth();
 
 if (type.value === "mobile") {
@@ -77,7 +61,18 @@ if (type.value === "mobile") {
 } else if (type.value === "desktop" && textDark.value == false) {
   textDark.value = false;
 }
-
+const scrollEvents = ()=>{
+  let scroll = document.documentElement.scrollTop;
+  if(height.value-100>scroll) {
+    textDark.value = false;
+  }else {
+    textDark.value = true;
+  }
+};
+onMounted(() => {
+  height.value = document.querySelector(".page-header").offsetHeight;
+  document.addEventListener('scroll', scrollEvents);
+});
 watch(
   () => type.value,
   (newValue) => {
@@ -86,35 +81,18 @@ watch(
     } else {
       textDark.value = false;
     }
-  }
+  },
 );
 </script>
 <template>
   <nav
-    class="navbar navbar-expand-lg top-0"
-    :class="{
-      'z-index-3 w-100 shadow-none navbar-transparent position-absolute my-3':
-        props.transparent,
-      'my-3 blur border-radius-lg z-index-3 py-2 shadow py-2 start-0 end-0 mx-4 position-absolute mt-4':
-        props.sticky,
-      'navbar-light bg-white py-3': props.light,
-      ' navbar-dark bg-gradient-dark z-index-3 py-3': props.dark
-    }"
+    class="navbar navbar-expand-lg top-0 z-index-3 w-100 position-fixed pt-3"
+    :class="[getBG()]"
   >
-    <div
-      :class="
-        props.transparent || props.light || props.dark
-          ? 'container'
-          : 'container-fluid px-0'
-      "
-    >
+    <div class="container">
       <RouterLink
-        class="navbar-brand d-none d-md-block"
-        :class="[
-          (props.transparent && textDark.value) || !props.transparent
-            ? 'text-dark font-weight-bolder ms-sm-3'
-            : 'text-white font-weight-bolder ms-sm-3'
-        ]"
+        class="navbar-brand d-none d-md-block font-weight-bolder"
+        :class="[getTextColor()]"
         :to="{ name: '' }"
         rel="tooltip"
         title="Designed and Coded by Creative Tim"
@@ -136,13 +114,8 @@ watch(
       >
         Material Design
       </RouterLink>
-      <a
-        href="https://www.creative-tim.com/product/vue-material-kit-pro"
-        class="btn btn-sm bg-gradient-success mb-0 ms-auto d-lg-none d-block"
-        >Buy Now</a
-      >
       <button
-        class="navbar-toggler shadow-none ms-2"
+        class="navbar-toggler shadow-none "
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navigation"
@@ -161,30 +134,34 @@ watch(
         id="navigation"
       >
         <ul class="navbar-nav navbar-nav-hover ms-auto">
-          <li><a href="#info">테스트</a></li>
+          <li class="nav-item dropdown dropdown-hover mx-2">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" href="#info" :class="getTextColor()">
+              Info
+            </a>
+          </li>
+          <li class="nav-item dropdown dropdown-hover mx-2">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" href="#skill" :class="getTextColor()">
+              Skill
+            </a>
+          </li>
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a
               role="button"
               class="nav-link ps-2 d-flex cursor-pointer align-items-center"
-              :class="getTextColor()"
               id="dropdownMenuPages"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              :class="getTextColor()"
             >
-              <i
-                class="material-icons opacity-6 me-2 text-md"
-                :class="getTextColor()"
-                >dashboard</i
-              >
               Pages
               <img
-                :src="getArrowColor()"
                 alt="down-arrow"
+                :src="getArrowColor()"
                 class="arrow ms-2 d-lg-block d-none"
               />
               <img
-                :src="getArrowColor()"
                 alt="down-arrow"
+                :src="getArrowColor()"
                 class="arrow ms-1 d-lg-none d-block ms-auto"
               />
             </a>
@@ -235,21 +212,16 @@ watch(
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <i
-                class="material-icons opacity-6 me-2 text-md"
-                :class="getTextColor()"
-                >view_day</i
-              >
               Sections
               <img
-                :src="getArrowColor()"
                 alt="down-arrow"
                 class="arrow ms-2 d-lg-block d-none"
+                :src="getArrowColor()"
               />
               <img
-                :src="getArrowColor()"
                 alt="down-arrow"
                 class="arrow ms-1 d-lg-none d-block ms-auto"
+                :src="getArrowColor()"
               />
             </a>
             <div
@@ -718,11 +690,6 @@ watch(
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <i
-                class="material-icons opacity-6 me-2 text-md"
-                :class="getTextColor()"
-                >article</i
-              >
               Docs
               <img
                 :src="getArrowColor()"

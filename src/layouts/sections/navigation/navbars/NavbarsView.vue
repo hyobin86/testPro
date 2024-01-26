@@ -5,8 +5,6 @@ import { onMounted } from "vue";
 import BaseLayout from "../../components/BaseLayout.vue";
 import View from "../../components/View.vue";
 
-// Navbars page components
-import NavbarDark from "./components/NavbarDark.vue";
 
 // Navbars page components codes
 import { navbarDarkCode } from "./components/codes";
@@ -30,7 +28,6 @@ onMounted(() => {
       id="navbar-dark"
       height="300  position-relative"
     >
-      <NavbarDark />
     </View>
   </BaseLayout>
 </template>

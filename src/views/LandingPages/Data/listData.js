@@ -1,7 +1,7 @@
 
 
 const imagesPrefix =
-  "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system//sections";
+  "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/sections";
 
 import imgPricing from "@/assets/img/pricing.png";
 import imgFeatures from "@/assets/img/features.png";

@@ -2,8 +2,8 @@
 import { onMounted, onUnmounted } from "vue";
 
 //example components
-import DefaultNavbar from "../../examples/navbars/NavbarDefault.vue";
-import DefaultFooter from "../../examples/footers/FooterDefault.vue";
+import MenuBar from "@/components/MenuBar.vue";
+import Footer from "@/components/Footer.vue";
 
 //image
 import bg0 from "@/assets/img/bg9.jpg";
@@ -13,9 +13,9 @@ import Typed from "typed.js";
 import data from "./Data/listData.js";
 
 //sections
-import Information from "./sub/AboutInformation.vue";
-import Graph from "./sub/AboutGraph.vue"
-import List from "./sub/AboutList.vue"
+import Information from "./section/AboutInformation.vue";
+import Graph from "./section/AboutGraph.vue"
+import List from "./section/AboutList.vue"
 
 const body = document.getElementsByTagName("body")[0];
 //hooks
@@ -42,9 +42,7 @@ onUnmounted(() => {
 });
 </script>
 <template>
-  <DefaultNavbar
-    transparent
-  />
+  <MenuBar/>
   <header class="bg-gradient-dark">
     <div
       class="page-header min-vh-75"
@@ -90,5 +88,5 @@ onUnmounted(() => {
     <Graph />
     <List :data="data" />
   </div>
-  <DefaultFooter />
+  <Footer />
 </template>
