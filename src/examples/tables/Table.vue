@@ -2,7 +2,7 @@
 defineProps({
   headers: {
     type: Array,
-    default: () => ["Author", "Function", "Status", "Employed", "Action"],
+    default: () => ["Function", "Status", "Employed", "Action"],
   },
   rows: {
     type: Array,

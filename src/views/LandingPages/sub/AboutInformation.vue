@@ -1,10 +1,10 @@
 <script setup>
 // example components
-import DefaultInfoCard from "../../../../examples/cards/infoCards/DefaultInfoCard.vue";
-import CenteredBlogCard from "../../../../examples/cards/blogCards/CenteredBlogCard.vue";
+import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.vue";
+import CenteredBlogCard from "../../../examples/cards/blogCards/CenteredBlogCard.vue";
 </script>
 <template>
-  <section class="py-7">
+  <section class="py-7" id="info">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6">

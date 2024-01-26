@@ -1,5 +1,5 @@
 <script setup>
-import ExampleCard from "../Components/ExampleCard.vue";
+import ExampleCard from "./ExampleCard.vue";
 import MaterialBadge from "../../../components/MaterialBadge.vue";
 
 defineProps({
@@ -80,6 +80,13 @@ export default {
             <h6 class="text-secondary font-weight-normal pe-3">
               {{ description }}
             </h6>
+            <a
+              href="/"
+              class="icon-move-right text-success"
+            >
+              more show
+              <i class="fas fa-arrow-right text-sm ms-1"></i>
+            </a>
           </div>
         </div>
         <div :class="`${col2 ?? 'col-lg-9'}`">
