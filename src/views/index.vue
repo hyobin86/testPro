@@ -10,7 +10,7 @@ import Skill from "./section/AboutSkill.vue"
 import ProjectList from "./section/AboutProject.vue"
 
 //data
-import data from "./Data/listData.js";
+import data from "./data/listData.js";
 </script>
 <template>
   <MenuBar/>

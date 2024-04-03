@@ -1,18 +1,5 @@
 
-
-const imagesPrefix =
-  "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/sections";
-
-import imgPricing from "@/assets/img/pricing.png";
-import imgFeatures from "@/assets/img/features.png";
-import imgBlogPosts from "@/assets/img/blog-posts.png";
-import imgTestimonials from "@/assets/img/testimonials.png";
-import imgTeam from "@/assets/img/team.png";
-import imgStat from "@/assets/img/stat.png";
-import imgContent from "@/assets/img/content.png";
-import imgPagination from "@/assets/img/pagination.png";
-import imgAlert from "@/assets/img/alerts.jpg";
-import imgModal from "@/assets/img/modals.jpg";
+import img from "@/assets/img/pricing.png";
 
 export default [
   {
@@ -21,98 +8,98 @@ export default [
       "A selection of 45 page sections that fit perfectly in any combination",
     items: [
       {
-        image: imgFeatures,
+        image: img,
         title: "Page Headers",
         subtitle: "10 Examples",
         route: "index",
         pro: false
       },
       {
-        image: imgFeatures,
+        image: img,
         title: "Features",
         subtitle: "14 Examples",
         route: "index",
         pro: false
       },
       {
-        image: imgPricing,
+        image: img,
         title: "Pricing",
         subtitle: "8 Examples",
         route: "",
         pro: true
       },
       {
-        image: imgFeatures,
+        image: img,
         title: "FAQ",
         subtitle: "1 Example",
         route: "",
         pro: true
       },
       {
-        image: imgBlogPosts,
+        image: img,
         title: "Blog Posts",
         subtitle: "11 Examples",
         route: "",
         pro: true
       },
       {
-        image: imgTestimonials,
+        image: img,
         title: "Testimonials",
         subtitle: "11 Examples",
         route: "",
         pro: true
       },
       {
-        image: imgTeam,
+        image: img,
         title: "Teams",
         subtitle: "6 Examples",
         route: "",
         pro: true
       },
       {
-        image: imgStat,
+        image: img,
         title: "Stats",
         subtitle: "3 Examples",
         route: "",
         pro: true
       },
       {
-        image: imgFeatures,
+        image: img,
         title: "Call to Actions",
         subtitle: "8 Examples",
         route: "",
         pro: true
       },
       {
-        image: imgFeatures,
+        image: img,
         title: "Applications",
         subtitle: "6 Examples",
         route: "",
         pro: true
       },
       {
-        image: imgFeatures,
+        image: img,
         title: "Logo Areas",
         subtitle: "4 Examples",
         route: "",
         pro: true
       },
       {
-        image: imgFeatures,
+        image: img,
         title: "Footers",
         subtitle: "10 Examples",
         route: "",
         pro: true
       },
       {
-        image: imgFeatures,
+        image: img,
         title: "General Cards",
         subtitle: "9 Examples",
         route: "",
         pro: true
       },
       {
-        image: imgContent,
+        image: img,
         title: "Content Sections",
         subtitle: "8 Examples",
         route: "",
@@ -125,63 +112,63 @@ export default [
     description: "30+ components that will help go through the pages",
     items: [
       {
-        image: imgPagination,
+        image: img,
         title: "Navbars",
         subtitle: "4 Examples",
         route: "",
         pro: false
       },
       {
-        image: imgPagination,
+        image: img,
         title: "Nav Tabs",
         subtitle: "2 Nav Tabs",
         route: "",
         pro: false
       },
       {
-        image: imgPagination,
+        image: img,
         title: "Pagination",
         subtitle: "3 Examples",
         route: "",
         pro: false
       },
       {
-        image: imgPagination,
+        image: img,
         title: "Navbars",
         subtitle: "4 Examples",
         route: "",
         pro: false
       },
       {
-        image: imgPagination,
+        image: img,
         title: "Nav Tabs",
         subtitle: "2 Nav Tabs",
         route: "",
         pro: false
       },
       {
-        image: imgPagination,
+        image: img,
         title: "Pagination",
         subtitle: "3 Examples",
         route: "",
         pro: false
       },
       {
-        image: imgPagination,
+        image: img,
         title: "Navbars",
         subtitle: "4 Examples",
         route: "",
         pro: false
       },
       {
-        image: imgPagination,
+        image: img,
         title: "Nav Tabs",
         subtitle: "2 Nav Tabs",
         route: "",
         pro: false
       },
       {
-        image: imgPagination,
+        image: img,
         title: "Pagination",
         subtitle: "3 Examples",
         route: "",
@@ -195,28 +182,28 @@ export default [
       "20+ Fully coded components that popup from different places of the screen",
     items: [
       {
-        image: imgAlert,
+        image: img,
         title: "Alerts",
         subtitle: "4 Examples",
         route: "",
         pro: false
       },
       {
-        image: imgModal,
+        image: img,
         title: "Modals",
         subtitle: "5 Examples",
         route: "",
         pro: false
       },
       {
-        image: imgModal,
+        image: img,
         title: "Modals",
         subtitle: "5 Examples",
         route: "",
         pro: false
       },
       {
-        image: imgModal,
+        image: img,
         title: "Modals",
         subtitle: "5 Examples",
         route: "",
