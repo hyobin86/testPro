@@ -78,7 +78,7 @@ export default {
               {{ description }}
             </h6>
             <a
-              href="/"
+              href="/sections/project1"
               class="icon-move-right text-success"
             >
               more show

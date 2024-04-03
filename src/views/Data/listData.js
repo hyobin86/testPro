@@ -128,102 +128,67 @@ export default [
         image: imgPagination,
         title: "Navbars",
         subtitle: "4 Examples",
-        route: "navigation-navbars",
+        route: "",
         pro: false
       },
       {
         image: imgPagination,
         title: "Nav Tabs",
         subtitle: "2 Nav Tabs",
-        route: "navigation-navtabs",
+        route: "",
         pro: false
       },
       {
         image: imgPagination,
         title: "Pagination",
         subtitle: "3 Examples",
-        route: "navigation-pagination",
+        route: "",
         pro: false
       },
       {
         image: imgPagination,
         title: "Navbars",
         subtitle: "4 Examples",
-        route: "navigation-navbars",
+        route: "",
         pro: false
       },
       {
         image: imgPagination,
         title: "Nav Tabs",
         subtitle: "2 Nav Tabs",
-        route: "navigation-navtabs",
+        route: "",
         pro: false
       },
       {
         image: imgPagination,
         title: "Pagination",
         subtitle: "3 Examples",
-        route: "navigation-pagination",
+        route: "",
         pro: false
       },
       {
         image: imgPagination,
         title: "Navbars",
         subtitle: "4 Examples",
-        route: "navigation-navbars",
+        route: "",
         pro: false
       },
       {
         image: imgPagination,
         title: "Nav Tabs",
         subtitle: "2 Nav Tabs",
-        route: "navigation-navtabs",
+        route: "",
         pro: false
       },
       {
         image: imgPagination,
         title: "Pagination",
         subtitle: "3 Examples",
-        route: "navigation-pagination",
+        route: "",
         pro: false
       }
     ]
   },
-  // {
-  //   heading: "Input Areas",
-  //   description:
-  //     "50+ elements that you need for text manipulation and insertion",
-  //   items: [
-  //     {
-  //       image: `${imagesPrefix}/newsletters.jpg`,
-  //       title: "Newsletters",
-  //       subtitle: "6 Examples",
-  //       route: "",
-  //       pro: true
-  //     },
-  //     {
-  //       image: `${imagesPrefix}/contact-sections.jpg`,
-  //       title: "Contact Sections",
-  //       subtitle: "8 Examples",
-  //       route: "",
-  //       pro: true
-  //     },
-  //     {
-  //       image: `${imagesPrefix}/forms.jpg`,
-  //       title: "Forms",
-  //       subtitle: "3 Examples",
-  //       route: "inputareas-forms",
-  //       pro: false
-  //     },
-  //     {
-  //       image: `${imagesPrefix}/inputs.jpg`,
-  //       title: "Inputs",
-  //       subtitle: "6 Examples",
-  //       route: "inputareas-inputs",
-  //       pro: false
-  //     }
-  //   ]
-  // },
   {
     heading: "Attention Catchers",
     description:
@@ -233,28 +198,28 @@ export default [
         image: imgAlert,
         title: "Alerts",
         subtitle: "4 Examples",
-        route: "ac-alerts",
+        route: "",
         pro: false
       },
       {
         image: imgModal,
         title: "Modals",
         subtitle: "5 Examples",
-        route: "ac-modals",
+        route: "",
         pro: false
       },
       {
         image: imgModal,
         title: "Modals",
         subtitle: "5 Examples",
-        route: "ac-modals",
+        route: "",
         pro: false
       },
       {
         image: imgModal,
         title: "Modals",
         subtitle: "5 Examples",
-        route: "ac-modals",
+        route: "",
         pro: false
       }
     ]

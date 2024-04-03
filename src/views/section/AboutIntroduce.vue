@@ -63,14 +63,14 @@
         <div class="col-lg-4 ms-auto mt-lg-0 mt-6">
           <div class="card">
             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 d-block blur-shadow-image">
-              <img src="https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="사진" class="img-fluid border-radius-lg" />
+              <img src="/src/assets/img/myphoto.jpg" alt="사진" class="img-fluid border-radius-lg" />
             </div>
             <div class="card-body text-center">
               <h5 class="font-weight-normal">
-                title
+                Park HyoBin
               </h5>
               <p class="mb-0">
-                description
+                ui&ux Developer
               </p>
               <a href="mailto:leenstar86@gmail.com?subject=함께 일하고 싶습니다.">
                 <button type="button" class="btn btn-sm mb-0 mt-3 bg-gradient-success">
