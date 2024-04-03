@@ -68,8 +68,8 @@ onUnmounted(() => {
               <a href="https://instagram.com/hyobin1216" target="_blank">
                 <i class="fab fa-instagram text-lg text-white me-4" title="go to instagram" data-bs-toggle="tooltip" data-bs-placement="top"></i>
               </a>
-              <a href="https://blog.naver.com/hyobin_memory" target="_blank">
-                <i class="fa fa-rss text-lg text-white" title="go to blog" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+              <a href="https://www.jobkorea.co.kr/User/Resume/View?rNo=12024716" target="_blank">
+                <i class="fa fa-rss text-lg text-white" title="go to resume" data-bs-toggle="tooltip" data-bs-placement="top"></i>
               </a>
             </div>
           </div>
