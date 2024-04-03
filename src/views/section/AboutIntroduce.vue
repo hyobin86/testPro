@@ -70,7 +70,7 @@
                 Park HyoBin
               </h5>
               <p class="mb-0">
-                ui&ux Developer
+                UI&UX Developer
               </p>
               <a href="mailto:leenstar86@gmail.com?subject=함께 일하고 싶습니다.">
                 <button type="button" class="btn btn-sm mb-0 mt-3 bg-gradient-success">

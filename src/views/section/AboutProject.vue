@@ -1,5 +1,5 @@
 <script setup>
-import ExampleCard from "./ExampleCard.vue";
+import Card from "@/components/Card.vue";
 import MaterialBadge from "@/components/MaterialBadge.vue";
 
 defineProps({
@@ -40,6 +40,12 @@ defineProps({
     default: "col-lg-9",
   },
 });
+
+const cardClick=()=>{
+  alert('click');
+
+  //오픈 팝업 띄우기!!
+}
 </script>
 <script>
 export default {
@@ -92,8 +98,9 @@ export default {
               class="col-md-4 mt-md-0"
               v-for="{ image, title, subtitle, route, pro } in items"
               :key="title"
+              @click="cardClick"
             >
-              <ExampleCard
+              <Card
                 class="min-height-160 shadow-lg mt-4"
                 :image="image"
                 :title="title"

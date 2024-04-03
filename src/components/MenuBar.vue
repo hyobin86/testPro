@@ -96,7 +96,7 @@ watch(
         rel="tooltip"
         data-placement="bottom"
       >
-        I'am
+        I AM
       </RouterLink>
       <RouterLink
         class="navbar-brand d-block d-md-none"
@@ -110,7 +110,7 @@ watch(
         title="Designed and Coded by Creative Tim"
         data-placement="bottom"
       >
-        I'am
+        I AM
       </RouterLink>
       <button
         class="navbar-toggler shadow-none"
