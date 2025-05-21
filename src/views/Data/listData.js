@@ -3,7 +3,7 @@ import img from "@/assets/img/pricing.png";
 
 export default [
   {
-    heading: "Design Blocks",
+    heading: "Design Blocks?!?!?",
     description:
       "A selection of 45 page sections that fit perfectly in any combination",
     items: [
